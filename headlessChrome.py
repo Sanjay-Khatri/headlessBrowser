@@ -2,7 +2,7 @@ from selenium import webdriver
 import os
 from bs4 import BeautifulSoup
 
-print(os.environ['PATH'])
+print("Result   ", os.environ['PATH'])
 
 chrome_options = webdriver.ChromeOptions()
 chrome_options.binary_location=os.environ.get("GOOGLE_CHROME_BIN")
