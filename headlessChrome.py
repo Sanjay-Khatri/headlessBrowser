@@ -2,18 +2,7 @@ from selenium import webdriver
 import os
 from bs4 import BeautifulSoup
 
-'''
-On Heroku, open your App. Click on the Settings tab and scroll down to Buildpacks. Add the following:
-
-Python (Select it from the officially supported buildpacks)
-Headless Google Chrome: https://github.com/heroku/heroku-buildpack-google-chrome
-Chromedriver: https://github.com/heroku/heroku-buildpack-chromedriver
-'''
-
-'''
-CHROMEDRIVER_PATH = /app/.chromedriver/bin/chromedriver
-GOOGLE_CHROME_BIN = /app/.apt/usr/bin/google-chrome
-'''
+print(os.environ['PATH'])
 
 chrome_options = webdriver.ChromeOptions()
 chrome_options.binary_location=os.environ.get("GOOGLE_CHROME_BIN")
