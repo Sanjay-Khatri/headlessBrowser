@@ -1,7 +1,12 @@
 from selenium import webdriver
 import os
 from bs4 import BeautifulSoup
+import cpuinfo
 
+print(cpuinfo.get_cpu_info())
+print(cpuinfo.get_cpu_info()['brand_raw'])
+print(cpuinfo.get_cpu_info()['arch_string_raw'])
+print(cpuinfo.get_cpu_info()['hz_actual_friendly'])
 print("Result   ", os.environ['PATH'])
 
 chrome_options = webdriver.ChromeOptions()
