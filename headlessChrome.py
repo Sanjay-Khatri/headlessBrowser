@@ -17,7 +17,7 @@ chrome_options.add_argument("--disable-dev-shm-usage")
 chrome_options.add_argument("--no-sandbox")
 
 
-driver=webdriver.Chrome(executable_path=os.path.join(os.getcwd(), "chromedriver"), chrome_options=chrome_options)
+driver=webdriver.Chrome(executable_path=os.environ.get("CHROMEDRIVER_PATH"), chrome_options=self.chrome_options)
 driver.get('https://www.amazon.in/dp/B07DJCVTDN/ref=cm_sw_r_other_apa_i_tMlzEbF8NA78X')
 soup = BeautifulSoup(driver.page_source, "html.parser")
 title = None
