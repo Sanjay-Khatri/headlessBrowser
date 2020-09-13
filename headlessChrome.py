@@ -18,6 +18,11 @@ chrome_options.add_argument("--no-sandbox")
 
 
 driver=webdriver.Chrome(executable_path=os.environ.get("CHROMEDRIVER_PATH"), chrome_options=chrome_options)
+
+driver.get("chrome://version/")
+print(driver.find_element_by_tag_name("body").text)
+
+
 driver.get('https://www.amazon.in/dp/B07DJCVTDN/ref=cm_sw_r_other_apa_i_tMlzEbF8NA78X')
 soup = BeautifulSoup(driver.page_source, "html.parser")
 title = None
@@ -41,4 +46,5 @@ except Exception as e:
     pass
 
 
+driver.close()
 driver.quit()
