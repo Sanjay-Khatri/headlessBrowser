@@ -9,7 +9,7 @@ idna==2.8
 instaloader==4.2.10
 itsdangerous==1.1.0
 Jinja2==2.11.1
-lxml==4.5.0
+lxml==4.6.5
 MarkupSafe==1.1.1
 mysql-connector==2.2.9
 mysql-connector-python==8.0.19
