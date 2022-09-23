@@ -14,7 +14,7 @@ MarkupSafe==1.1.1
 mysql-connector==2.2.9
 mysql-connector-python==8.0.19
 Pillow==5.2.0
-protobuf==3.11.3
+protobuf==3.18.3
 pyTelegramBotAPI==3.6.7
 pytz==2018.4
 requests==2.7.0
